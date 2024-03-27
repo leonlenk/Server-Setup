@@ -12,3 +12,5 @@ sudo cp /arcblroth_acm_ai_logo.ans ./assets
 sudo cp /etc/bash.bashrc ./assets
 
 sudo cp /var/spool/cron/crontabs/root ./assets
+
+sudo chown -R $(id -u):$(id -g) ./assets
