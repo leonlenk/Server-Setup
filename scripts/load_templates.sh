@@ -9,6 +9,8 @@ sudo tar xf ./assets/motd.tar.gz -C /etc/update-motd.d
 sudo mkdir /scripts/
 sudo tar xf ./assets/sys_scripts.tar.gz -C /scripts/
 
+sudo bash /scripts/connect_to_UCLA_Guest.sh
+
 sudo cp ./assets/arcblroth_acm_ai_logo.ans /
 
 sudo cp ./assets/bash.bashrc /etc/
