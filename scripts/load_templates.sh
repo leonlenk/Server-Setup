@@ -16,3 +16,5 @@ sudo cp ./assets/arcblroth_acm_ai_logo.ans /
 sudo cp ./assets/bash.bashrc /etc/
 
 sudo cp ./assets/root /var/spool/cron/crontabs/
+
+sudo chmod 600 /var/spool/cron/crontabs/root
