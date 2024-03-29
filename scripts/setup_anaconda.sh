@@ -8,8 +8,8 @@ chmod +x $conda
 
 sudo bash ./$conda -b -p /opt/anaconda3
 
-chmod -R go-w /opt/anaconda3
-chmod -R go+rX /opt/anaconda3
+sudo chmod -R go-w /opt/anaconda3
+sudo chmod -R go+rX /opt/anaconda3
 
 sudo mkdir -p /apps/conda/pkgs
 sudo chmod -R oug+rwx conda

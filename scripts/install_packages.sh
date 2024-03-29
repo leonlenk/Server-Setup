@@ -1,24 +1,26 @@
 #!/bin/bash
 
+sudo NEEDRESTART_MODE=a apt-get dist-upgrade --yes
+
 sudo apt update
 
-sudo apt install openssh-client
+sudo apt install -y openssh-client
 
-sudo apt install openssh-server
+sudo apt install -y openssh-server
 
-sudo apt install python3
+sudo apt install -y python3
 
-sudo apt install tmux
+sudo apt install -y tmux
 
-sudo apt install emacs
+sudo apt install -y emacs
 
-sudo apt install vim
+sudo apt install -y vim
 
-sudo apt install git-all
+sudo apt install -y git-all
 
-sudo apt install nvtop
+sudo apt install -y nvtop
 
-sudo apt install zip
+sudo apt install -y zip
 
 # github cli
 sudo mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
@@ -44,5 +46,5 @@ if [[ $? -ne 0 ]]; then
     go install github.com/cloudflare/cloudflared/cmd/cloudflared
     sudo mv ../cloudflared/cloudflared /usr/bin/cloudflared
     cd ..
-    rm -rf /cloudflared
+    rm -rf cloudflared/
 fi
